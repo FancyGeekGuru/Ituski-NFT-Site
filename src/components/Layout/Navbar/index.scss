@@ -1,0 +1,65 @@
+@import '../../../assets/sass/custom.scss';
+
+.custom-logo {
+    font-size: $font-title-size-1;
+    color: $color-white-1;
+}
+
+.custom-nav-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    margin-top: 1rem;
+    margin-bottom: .4rem;
+    padding: .5rem 1rem;
+
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 600;
+    color: white !important;
+
+    &:hover, &:focus {
+        background: #212121;
+        border-radius: 10px;
+    }
+}
+
+.custom-nav-auth-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: .4rem;
+
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: rgba(249, 216, 94, 1) !important;
+
+    border: 2px solid rgba(249, 216, 94, 1);
+    border-radius: 25px;
+    
+    transition: .2s ease-in-out;
+
+    &:hover, &:focus {
+        box-shadow: 0 0 12px #acd2f1;
+    }
+}
+
+.navbar-toggler {
+    margin-top: 1rem;
+    color: $color-white-1 !important;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    #responsive-navbar-nav {
+        padding: .5rem !important;
+    }
+}
