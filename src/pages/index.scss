@@ -11,8 +11,24 @@
 
 .home-title {
     font-family: 'Murasamu Free Trial';
-    font-size: 150px;
     text-shadow: 0px 0px 14px #ffffff;
+    font-size: 150px;
+
+    @media (max-width: 1920px) {
+        font-size: 150px;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 120px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 100px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 90px;
+    }
 }
 
 .home-second-section {
@@ -29,16 +45,78 @@
     background: linear-gradient(180deg, #0e0b2600 0%, #0E0B26 100%);
 }
 
+.description-padding {
+
+    padding-left: 102px;
+
+    @media (max-width: 1920px) {
+        padding-left: 102px;
+    }
+
+    @media (max-width: 1600px) {
+        padding-left: 80px;
+    }
+
+    @media (max-width: 992px) {
+        padding-left: 60px;
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 .home-description-title {
     font-family: 'Poppins';
-    font-size: 2.5vw;
-    line-height: 6vh;
     font-weight: 700;
+    font-size: 42px;
+    line-height: 63px;
+
+    @media (max-width: 1920px) {
+        font-size: 42px;
+        line-height: 63px;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+        line-height: 35px;
+    }
 }
 
 .home-description {
     font-family: 'Poppins';
-    font-size: 1.52vw;
-    line-height: 4.8vh;
+    font-size: 30px;
+    line-height: 45px;
     letter-spacing: 1.5px;
+
+    @media (max-width: 1920px) {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
