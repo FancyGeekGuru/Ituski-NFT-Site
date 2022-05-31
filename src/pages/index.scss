@@ -1,5 +1,7 @@
-.home-first-part {
-    background-image: url("../assets/img/main_background.png");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+.home-first-section {
+    background-image: url("../assets/img/section_1.png");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -9,6 +11,34 @@
 
 .home-title {
     font-family: 'Murasamu Free Trial';
-    font-size: 120px;
+    font-size: 150px;
     text-shadow: 0px 0px 14px #ffffff;
+}
+
+.home-second-section {
+    background-image: url("../assets/img/section_2.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    min-height: 200vh;
+}
+
+.fade-border {
+    height: 40vh;
+    background: linear-gradient(180deg, #0e0b2600 0%, #0E0B26 100%);
+}
+
+.home-description-title {
+    font-family: 'Poppins';
+    font-size: 2.5vw;
+    line-height: 6vh;
+    font-weight: 700;
+}
+
+.home-description {
+    font-family: 'Poppins';
+    font-size: 1.52vw;
+    line-height: 4.8vh;
+    letter-spacing: 1.5px;
 }
