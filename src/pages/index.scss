@@ -277,6 +277,18 @@
             font-size: 24px;
         }
     }
+
+    @media (max-width: 414px) {
+
+        span:first-child {
+            font-size: 18px;
+        }
+
+        span {
+            font-family: 'Poppins';
+            font-size: 18px;
+        }
+    }
 }
 
 .left-image-margin-top {
