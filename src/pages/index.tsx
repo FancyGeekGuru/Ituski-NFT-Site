@@ -116,7 +116,6 @@ const ItuskiHome = () => {
                     <span className='d-flex justify-content-center home-sub-title'>ITUSKI BRANCHES</span>
 
                     <Carousel
-                        fade
                         nextIcon={<img src={next_src} width={'22%'} />}
                         nextLabel={''}
                         prevIcon={<img src={prev_src} width={'22%'} />}
