@@ -1,8 +1,46 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Carousel } from 'react-bootstrap';
 import './index.scss';
 
+import itsuki_rarity_src from 'assets/img/itsuki-rarity.png';
+import left_flower_src from 'assets/img/left-flower.png';
 import rezzsha_src from 'assets/img/rezzsha.png';
+import right_flower_src from 'assets/img/right-flower.png';
+import itsuki_branches_src from 'assets/img/itsuki-branches.png';
+import next_src from 'assets/img/next.png';
+import prev_src from 'assets/img/prev.png';
+
+const traits_list = [
+    {
+        title: 'Clothes',
+        value: 72
+    },
+    {
+        title: 'Body',
+        value: 18
+    },
+    {
+        title: 'Hair',
+        value: 18
+    },
+    {
+        title: 'Expressions',
+        value: 24
+    },
+    {
+        title: 'Hands',
+        value: 10
+    },
+    {
+        title: 'Jwellery',
+        value: 52
+    },
+    {
+        title: 'Background',
+        value: 42
+    }
+];
+
 const ItuskiHome = () => {
     return (
         <>
@@ -13,7 +51,7 @@ const ItuskiHome = () => {
             <div className="fade-border" style={{ marginTop: '-40vh' }} />
 
             <div className='home-second-section'>
-                <Row className='mt-5 align-items-center'>
+                <Row className='align-items-center' style={{ marginTop: '60px' }}>
                     <Col sm='6'>
                         <div className='d-flex flex-column description-padding'>
                             <span className='home-description-title'>
@@ -31,6 +69,118 @@ const ItuskiHome = () => {
                         </div>
                     </Col>
                 </Row>
+
+                <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>ITSUKI RARITY</span>
+
+                <div className='home-gap'>
+                    <img src={itsuki_rarity_src} width={'100%'} />
+                </div>
+            </div>
+
+            <div className='background-second-color' style={{ marginTop: '-15px' }}>
+                <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>TRAITS</span>
+
+                <div className='d-flex justify-content-end'>
+                    <div className='left-image-margin-top' style={{ width: '50%' }}>
+                        <img src={left_flower_src} width={'100%'} />
+                    </div>
+                </div>
+
+                <div className='home-container' style={{ marginTop: '-30px' }}>
+                    <Row>
+                        {
+                            traits_list.map((row, index) => {
+                                return (
+                                    <Col xs='6' lg='4' xl='3' key={index} style={{ marginTop: '30px' }}>
+                                        <div className='Trait-Card'>
+                                            <span >{row.value}</span>
+                                            <span>{row.title}</span>
+                                        </div>
+                                    </Col>
+                                );
+                            })
+                        }
+                    </Row>
+                </div>
+
+                <div className='d-flex justify-content-start'>
+                    <div style={{ width: '50%', marginTop: '-30px' }}>
+                        <img src={right_flower_src} width={'100%'} />
+                    </div>
+                </div>
+
+                <div>
+                    <span className='d-flex justify-content-center home-sub-title'>ITUSKI BRANCHES</span>
+
+                    <Carousel
+                        fade
+                        nextIcon={<img src={next_src} width={'22%'} />}
+                        nextLabel={''}
+                        prevIcon={<img src={prev_src} width={'22%'} />}
+                        prevLabel={''}
+                        indicators={false}
+                    >
+                        <Carousel.Item>
+                            <div className='d-flex justify-content-center'>
+                                <div className='w-75'>
+                                    <img
+                                        className="d-block w-100"
+                                        src={itsuki_branches_src}
+                                        alt="First slide"
+                                    />
+                                </div>
+                            </div>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <div className='d-flex justify-content-center'>
+                                <div className='w-75'>
+                                    <img
+                                        className="d-block w-100"
+                                        src={itsuki_branches_src}
+                                        alt="second slide"
+                                    />
+                                </div>
+                            </div>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
+
+                <div style={{ marginBottom: '120px' }}>
+                    <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>TEAM</span>
+
+                    <div className='home-container home-sub-title-margin-top '>
+                        <Row style={{ rowGap: '30px' }}>
+                            {
+                                [0, 0, 0, 0].map((_, index) => {
+                                    return (
+                                        <Col sm='6' md='4' lg='3' key={index}>
+                                            <div className='team-member-card'>
+                                                <div style={{ minHeight: '250px', background: '#D9D9D9' }}></div>
+                                                <div style={{ minHeight: '60px', background: '#0E0B26', border: '1px solid gray' }}></div>
+                                            </div>
+                                        </Col>
+                                    );
+                                })
+                            }
+                        </Row>
+                    </div>
+                </div>
+            </div>
+
+            <div style={{ marginBottom: '500px' }}>
+                <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>FAQ</span>
+
+                {/** Collapse */}
+
+                <div className='home-container home-sub-title-margin-top' style={{ gap: '30px' }}>
+                    {
+                        [0, 0, 0, 0].map((_, index) => {
+                            return (
+                                <div key={index} style={{ minHeight: '60px', background: '#D9D9D9', marginTop:'35px' }}></div>
+                            );
+                        })
+                    }
+                </div>
             </div>
         </>
     );

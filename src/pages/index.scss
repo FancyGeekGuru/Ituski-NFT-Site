@@ -1,4 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.home-container {
+    padding: 0px 140px;
+
+    @media (max-width: 1920px) {
+        padding: 0px 140px;
+    }
+
+    @media (max-width: 1600px) {
+        padding: 0px 150px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 0px 60px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0px 60px;
+    }
+
+    @media (max-width: 576px) {
+        padding: 0px 40px;
+    }
+}
+
 
 .home-first-section {
     background-image: url("../assets/img/section_1.png");
@@ -37,7 +62,7 @@
     background-position: top;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    min-height: 200vh;
+    min-height: 140vh;
 }
 
 .fade-border {
@@ -118,5 +143,162 @@
     @media (max-width: 768px) {
         font-size: 14px;
         line-height: 24px;
+    }
+}
+
+.home-sub-title {
+    font-family: 'Poppins';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 100px;
+
+    @media (max-width: 1920px) {
+        font-size: 72px;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 56px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 44px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+}
+
+.home-sub-title-margin-top {
+    margin-top: 100px;
+
+    @media (max-width: 1920px) {
+        margin-top: 100px;
+    }
+
+    @media (max-width: 1600px) {
+        margin-top: 80px;
+    }
+
+    @media (max-width: 992px) {
+        margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 40px;
+    }
+
+    @media (max-width: 576px) {
+        margin-top: 0px;
+    }
+}
+
+.home-gap {
+    margin-top: 0px;
+
+    @media (max-width: 1920px) {
+        margin-top: 260px;
+    }
+
+    @media (max-width: 1600px) {
+        margin-top: 220px;
+    }
+
+    @media (max-width: 992px) {
+        margin-top: 180px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 180px;
+    }
+
+    @media (max-width: 576px) {
+        margin-top: 20px;
+    }
+}
+
+.background-second-color {
+    background: #1C164A;
+}
+
+.home-third-section {
+    background-image: url("../assets/img/traits.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.Trait-Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px;
+    background: linear-gradient(180deg, #0D0A26 0%, rgba(0, 0, 0, 0.31) 100%);
+    box-shadow: -3px 2px 4px #0d0a2648;
+
+    span:first-child {
+        font-size: 36px;
+    }
+
+    span {
+        font-family: 'Murasamu Free Trial';
+        font-size: 42px;
+    }
+
+    @media (max-width: 1920px) {
+        padding: 40px 40px;
+    }
+
+    @media (max-width: 1600px) {
+        padding: 30px 40px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 20px 40px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px 40px;
+    }
+
+    @media (max-width: 576px) {
+        padding: 20px 10px;
+
+        span:first-child {
+            font-size: 20px;
+        }
+    
+        span {
+            font-family: 'Murasamu Free Trial';
+            font-size: 24px;
+        }
+    }
+}
+
+.left-image-margin-top {
+    margin-top: -180px;
+
+    @media (max-width: 1920px) {
+        margin-top: -200px;
+    }
+
+    @media (max-width: 1600px) {
+        margin-top: -180px;
+    }
+
+    @media (max-width: 992px) {
+        margin-top: -140px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: -140px;
+    }
+
+    @media (max-width: 576px) {
+        margin-top: -100px;
     }
 }
