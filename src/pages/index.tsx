@@ -47,7 +47,7 @@ const ItuskiHome = () => {
         <>
             <div className='d-flex justify-content-center align-items-center'>
                 <video width="100%" height="1080px" autoPlay muted> 
-                    <source src='/video/Chiropractic_EMR_Radiology.mp4' type="video/mp4" />
+                    <source src='/video/itsuki-braches.mp4' type="video/mp4" />
                 </video>
             </div>
             <div className="fade-border" style={{ marginTop: '-40vh' }} />
