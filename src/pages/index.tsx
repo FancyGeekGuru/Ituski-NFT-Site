@@ -10,6 +10,8 @@ import itsuki_branches_src from 'assets/img/itsuki-branches.png';
 import next_src from 'assets/img/next.png';
 import prev_src from 'assets/img/prev.png';
 
+
+
 const traits_list = [
     {
         title: 'Clothes',
@@ -45,7 +47,7 @@ const ItuskiHome = () => {
     return (
         <>
             <div className='home-first-section d-flex justify-content-center align-items-center'>
-                <span className='home-title' style={{ marginTop: '12vh' }}>ITSUKI</span>
+                <span className='home-title' style={{ marginTop: '8vh' }}>ITSUKI</span>
             </div>
 
             <div className="fade-border" style={{ marginTop: '-40vh' }} />
@@ -176,7 +178,7 @@ const ItuskiHome = () => {
                     {
                         [0, 0, 0, 0].map((_, index) => {
                             return (
-                                <div key={index} style={{ minHeight: '60px', background: '#D9D9D9', marginTop:'35px' }}></div>
+                                <div key={index} style={{ minHeight: '60px', background: '#D9D9D9', marginTop: '35px' }}></div>
                             );
                         })
                     }

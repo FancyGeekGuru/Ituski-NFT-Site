@@ -9,7 +9,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const { pathname, search } = useLocation();
   return (
     <div className='background-main-color d-flex flex-column flex-fill wrapper'>
-      {/* <Navbar /> */}
+      <Navbar />
       <main className='d-flex flex-column flex-grow-1'>
         {children}
       </main>

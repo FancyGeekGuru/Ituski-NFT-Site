@@ -9,19 +9,26 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-
     margin-top: 1rem;
     margin-bottom: .4rem;
     padding: .5rem 1rem;
-
-    font-family: 'Segoe UI';
-    font-size: 14px;
-    font-weight: 600;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
     color: white !important;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background: #212121;
         border-radius: 10px;
+    }
+
+    @media (max-width: 1920px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 16px;
     }
 }
 
@@ -41,17 +48,23 @@
 
     border: 2px solid rgba(249, 216, 94, 1);
     border-radius: 25px;
-    
+
     transition: .2s ease-in-out;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         box-shadow: 0 0 12px #acd2f1;
     }
 }
 
+.navbar {
+    position: absolute !important;
+    padding: 0 !important;
+}
+
 .navbar-toggler {
     margin-top: 1rem;
-    color: $color-white-1 !important;
+    color: $color-white-1  !important;
 }
 
 .navbar-nav {
@@ -61,5 +74,23 @@
 @media screen and (max-width: 768px) {
     #responsive-navbar-nav {
         padding: .5rem !important;
+    }
+}
+
+.top-nav-bar {
+    background: #0E0B26;
+    border-radius: 30px 0px 0px 30px;
+    padding-bottom: 8px;
+}
+
+.responsive-margin {
+    margin-left: 30px;
+
+    @media (min-width: 1920px) {
+        margin-left: 50px;
+    }
+
+    @media (max-width: 768px) {
+        margin-left: auto;
     }
 }
