@@ -125,22 +125,23 @@ const ItuskiHome = () => {
                         <Carousel.Item>
                             <div className='d-flex justify-content-center'>
                                 <div className='w-75'>
-                                    <img
-                                        className="d-block w-100"
-                                        src={itsuki_branches_src}
-                                        alt="First slide"
-                                    />
-                                </div>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div className='d-flex justify-content-center'>
-                                <div className='w-75'>
-                                    <img
-                                        className="d-block w-100"
-                                        src={itsuki_branches_src}
-                                        alt="second slide"
-                                    />
+                                    {/* <div>
+                                        <img
+                                            className="d-block w-100"
+                                            src={itsuki_branches_src}
+                                            alt="First slide"
+                                        />
+                                    </div> */}
+                                    <div className='slider-section'>
+                                        <div className='d-flex flex-column slider-description-box'>
+                                            <span className='slider-section-title'>ITUSKI <span>VISION</span></span>
+                                            <span className='slider-section-description mt-5'>
+                                                We at Itsuki adore nature. We believe that giving back to nature is an important element for human growth and existence. This extends into the animal kingdom aswell.
+                                                <br /><br />
+                                                We thrive on creating the greatest organic NFT community ever to explore and implement all the possibilities of bringing technology and nature together.
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </Carousel.Item>
