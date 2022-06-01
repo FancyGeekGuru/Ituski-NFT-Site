@@ -45,11 +45,12 @@ const traits_list = [
 const ItuskiHome = () => {
     return (
         <>
-            <div className='d-flex justify-content-center align-items-center'>
-                <video width="100%" height="1080px" autoPlay muted loop> 
+            <div className='home-first-section d-flex justify-content-center align-items-center'>
+                <video width="100%" height="100%" autoPlay muted loop> 
                     <source src='/video/itsuki-braches.mp4' type="video/mp4" />
                 </video>
             </div>
+
             <div className="fade-border" style={{ marginTop: '-40vh' }} />
 
             <div className='home-second-section'>
