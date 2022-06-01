@@ -11,7 +11,6 @@ import next_src from 'assets/img/next.png';
 import prev_src from 'assets/img/prev.png';
 
 
-
 const traits_list = [
     {
         title: 'Clothes',
@@ -46,10 +45,11 @@ const traits_list = [
 const ItuskiHome = () => {
     return (
         <>
-            <div className='home-first-section d-flex justify-content-center align-items-center'>
-                <span className='home-title' style={{ marginTop: '8vh' }}>ITSUKI</span>
+            <div className='d-flex justify-content-center align-items-center'>
+                <video width="100%" height="1080px" autoPlay muted> 
+                    <source src='/video/Chiropractic_EMR_Radiology.mp4' type="video/mp4" />
+                </video>
             </div>
-
             <div className="fade-border" style={{ marginTop: '-40vh' }} />
 
             <div className='home-second-section'>
