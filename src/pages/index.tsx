@@ -46,7 +46,7 @@ const ItuskiHome = () => {
     return (
         <>
             <div className='d-flex justify-content-center align-items-center'>
-                <video className="video-background" autoPlay loop muted playsInline>
+                <video className="video-background" width={'100%'} autoPlay loop muted playsInline>
                     <source src='/video/itsuki-braches.mp4' type="video/mp4" />
                 </video>
             </div>
