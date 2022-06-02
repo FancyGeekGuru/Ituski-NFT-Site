@@ -6,7 +6,6 @@ import itsuki_rarity_src from 'assets/img/itsuki-rarity.png';
 import left_flower_src from 'assets/img/left-flower.png';
 import rezzsha_src from 'assets/img/rezzsha.png';
 import right_flower_src from 'assets/img/right-flower.png';
-import itsuki_branches_src from 'assets/img/itsuki-branches.png';
 import next_src from 'assets/img/next.png';
 import prev_src from 'assets/img/prev.png';
 
@@ -114,7 +113,6 @@ const ItuskiHome = () => {
 
                 <div>
                     <span className='d-flex justify-content-center home-sub-title'>ITUSKI BRANCHES</span>
-
                     <Carousel
                         nextIcon={<img src={next_src} width={'22%'} />}
                         nextLabel={''}
@@ -122,7 +120,7 @@ const ItuskiHome = () => {
                         prevLabel={''}
                         indicators={false}
                     >
-                        <Carousel.Item>
+                        <Carousel.Item interval={1000}>
                             <div className='d-flex justify-content-center'>
                                 <div className='w-75'>
                                     <div className='slider-section'>
@@ -156,7 +154,6 @@ const ItuskiHome = () => {
                         </Carousel.Item>
                     </Carousel>
                 </div>
-
                 <div style={{ marginBottom: '120px' }}>
                     <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>TEAM</span>
 
@@ -167,8 +164,12 @@ const ItuskiHome = () => {
                                     return (
                                         <Col sm='6' md='4' lg='3' key={index}>
                                             <div className='team-member-card'>
-                                                <div style={{ minHeight: '250px', background: '#D9D9D9' }}></div>
-                                                <div style={{ minHeight: '60px', background: '#0E0B26', border: '1px solid gray' }}></div>
+                                                <div style={{ minHeight: '250px', background: '#D9D9D9' }}>
+                                                    
+                                                </div>
+                                                <div style={{ minHeight: '60px', background: '#0E0B26', border: '1px solid gray' }}>
+
+                                                </div>
                                             </div>
                                         </Col>
                                     );

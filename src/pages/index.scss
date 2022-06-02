@@ -255,11 +255,6 @@
 
     @media (max-width: 1600px) {
         padding: 30px 40px;
-    }
-
-    @media (max-width: 1280px) {
-        padding: 30px 40px;
-
         span:first-child {
             font-size: 20px;
         }
@@ -350,36 +345,47 @@
     height: 680px;
 
     @media (max-width: 1920px) {
+        overflow:hidden;
         height: 75vh;
     }
 
     @media (max-width: 1600px) {
+        overflow:hidden;
         height: 85vh;
     }
 
     @media (max-width: 1440px) {
+        overflow:hidden;
         height: 80vh;
     }
 
     @media (max-width: 992px) {
+        overflow:hidden;
         height: 55vh;
     }
 
     @media (max-width: 768px) {
+        overflow:hidden;
         height: 60vh;
     }
 
     @media (max-width: 375px) {
+        overflow:hidden;
         height: 80vh;
     }
 
     @media (max-width: 280px) {
+        overflow:hidden;
         height: 100vh;
     }
 
     .slider-section-title {
         font-family: 'Murasamu Free Trial';
         font-size: 42px;
+
+        @media (max-width: 2560px) {
+            font-size: 36px;
+        }
 
         @media (max-width: 992px) {
             font-size: 30px;
@@ -401,6 +407,10 @@
     .slider-section-description {
         font-family: 'Amiko';
         font-size: 32px;
+
+        @media (max-width: 2560px) {
+            font-size: 28px;
+        }
         
         @media (max-width: 1440px) {
             font-size: 22px;
@@ -472,4 +482,6 @@
         }
     }
 }
-
+.carousel-item {
+    transition-duration: 2s !important;
+}
