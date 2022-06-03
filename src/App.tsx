@@ -22,7 +22,7 @@ const App = () => {
         </Routes>
       </Layout>
     </Router>
-  );
+    );
 };
 
 export default App;
