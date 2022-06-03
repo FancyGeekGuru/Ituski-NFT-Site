@@ -14,6 +14,8 @@ import prev_src from 'assets/img/prev.png';
 import team_src from 'assets/img/team.png';
 import discord_src from 'assets/img/discord.png';
 import twitter_src from 'assets/img/twitter.png';
+import LazyLoadingImage from 'components/Loading/LazyLoadingImage';
+
 
 const traits_list = [
     {
@@ -49,19 +51,19 @@ const traits_list = [
 const faq_lists = [
     {
         title: 'What is Itsuki?',
-        description: 'Itsuki is on NFT collection that resembles fores sprites.<br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
+        description: 'Itsuki is an NFT collection that resembles forest spirits.When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, these are the happiest times for the Itsuki and all the beings of the forest, laughter and drumbeat is heard all throughout the realm and some celebrations are rumored to have lasted months.'
     },
     {
         title: 'How is Itsuki created and who is the artist?',
-        description: 'How is Itsuki created and who is the artist?<br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
+        description: 'How is Itsuki created and who is the artist?'
     },
     {
         title: 'What is the supply & mint price?',
-        description: 'What is the supply & mint price?  <br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
+        description: 'What is the supply & mint price?'
     },
     {
         title: 'When is the mint date?',
-        description: 'About mint data.<br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
+        description: 'About mint data?'
     }
 ];
 
@@ -91,7 +93,7 @@ const ItuskiHome = () => {
                     </Col>
                     <Col sm='6'>
                         <div>
-                            <img src={rezzsha_src} alt='rezzsha' width={'100%'} />
+                            <LazyLoadingImage src={rezzsha_src} alt='rezzsha' />
                         </div>
                     </Col>
                 </Row>
@@ -99,7 +101,7 @@ const ItuskiHome = () => {
                 <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>ITSUKI RARITY</span>
 
                 <div className='home-gap'>
-                    <img src={itsuki_rarity_src} width={'100%'} />
+                    <LazyLoadingImage src={itsuki_rarity_src} alt='itsuki_rarity' />
                 </div>
             </div>
 
