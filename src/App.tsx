@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route, Routes, BrowserRouter as Router, Navigate } from 'react-router-dom';
 import Layout from 'components/Layout';
 import PageNotFound from 'pages/PageNotFound';
@@ -9,6 +8,7 @@ const App = () => {
   return (
     <Router>
       <Layout>
+
         <Routes>
           {routes.map((route: any, index: number) => (
             <Route

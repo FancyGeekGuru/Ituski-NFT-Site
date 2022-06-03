@@ -1,6 +1,6 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
-import { Carousel } from 'react-bootstrap';
+import { Row, Col, Carousel } from 'react-bootstrap';
+import { Accordion, Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 
@@ -11,8 +11,9 @@ import right_flower_src from 'assets/img/right-flower.png';
 import next_src from 'assets/img/next.png';
 import prev_src from 'assets/img/prev.png';
 
-import photo1_src from 'assets/img/team.png';
-import plus_src from 'assets/img/plus.png';
+import team_src from 'assets/img/team.png';
+import discord_src from 'assets/img/discord.png';
+import twitter_src from 'assets/img/twitter.png';
 
 const traits_list = [
     {
@@ -48,19 +49,19 @@ const traits_list = [
 const faq_lists = [
     {
         title: 'What is Itsuki?',
-        description: ''
+        description: 'Itsuki is on NFT collection that resembles fores sprites.<br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
     },
     {
         title: 'How is Itsuki created and who is the artist?',
-        description: ''
+        description: 'How is Itsuki created and who is the artist?<br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
     },
     {
         title: 'What is the supply & mint price?',
-        description: ''
+        description: 'What is the supply & mint price?  <br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
     },
     {
         title: 'When is the mint date?',
-        description: ''
+        description: 'About mint data.<br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
     }
 ];
 
@@ -190,7 +191,7 @@ const ItuskiHome = () => {
                                         <Col sm='6' md='4' lg='3' key={index}>
                                             <div className='team-member-card'>
                                                 <div style={{ background: '#D9D9D9' }}>
-                                                    <img src={photo1_src} style={{width:'100%', objectFit: 'cover'}}/>
+                                                    <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/>
                                                 </div>
                                                 <div style={{ background: '#0E0B26', border: '1px solid gray', textAlign:'center'}}>
                                                     <p className='description'>LOREM IPSUM</p>
@@ -206,26 +207,51 @@ const ItuskiHome = () => {
                 </div>
             </div>
 
-            <div style={{ marginBottom: '500px' }}>
+            <div style={{ marginBottom: '50px' }}>
                 <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>FAQ</span>
 
                 {/** Collapse */}
 
-                <div className='home-container home-sub-title-margin-top' style={{ gap: '30px' }}>
+                <div className='home-container home-sub-title-margin-top custom-accordion' style={{ gap: '30px' }}>
+                    <Accordion>
                     {
                         faq_lists.map((faq_item, index) => {
                             return (
-                                <div key={index} style={{ background: '#1C164A', marginTop: '35px' }}>
-                                    <p className='faq-title'>
-                                        { faq_item.title }
-                                        <img src={ plus_src }  style={{ float: 'right', background: '#1C164A', maxHeight: '35px', marginTop: '10px', marginRight: '10px' }}/>
-                                    </p>   
-                                </div>
+                                <Accordion.Item eventKey={index.toString()}>
+                                    <Accordion.Header>
+                                            <p className='faq-title' >
+                                                <span>
+                                                    { faq_item.title }
+                                                </span>
+                                                {/* <img src={ plus_src }  className='faq-icon'/> */}
+                                            </p>   
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        <p className='faq-description'>
+                                            { faq_item.description.split('<br>').map(str => <p>{str}</p>) }
+                                        </p>   
+                                    </Accordion.Body>
+                                </Accordion.Item>
                             );
                         })
                     }
+                    </Accordion>
                 </div>
             </div>
+
+            {/* footer  */}
+            <div style={{ padding: '50px', backgroundColor:'black'}}>
+                <span className='d-flex justify-content-center footer-title'>ITSUKI</span>
+                <div className='text-center' style={{marginTop:"20px"}}>
+                    <img src={discord_src} className='social-icons'/>
+                    <img src={twitter_src} className='social-icons'/>
+                </div>
+                <div className='text-center'>
+                    @Copyright { new Date().getFullYear() } &middot; Itsuki &middot; All rights reserverd 
+                </div>
+            </div>
+
+
         </>
     );
 };

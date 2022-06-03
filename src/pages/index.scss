@@ -146,11 +146,10 @@
     }
 }
 
-.home-sub-title {
-    font-family: 'Poppins';
+.footer-title {
+    font-family: 'Murasamu Free Trial';
+    text-shadow: 0px 0px 14px #ffffff;
     font-size: 72px;
-    font-weight: 700;
-    line-height: 100px;
 
     @media (max-width: 1920px) {
         font-size: 72px;
@@ -486,6 +485,14 @@
     transition-duration: 2s !important;
 }
 
+.accordion-button.collapsed:after {
+    background-image: url('../assets/img/plus.png');
+    transform: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../assets/img/minus.png');
+    transform: none;
+}
 .team-member-card {
     >div{
         >p{
@@ -527,7 +534,8 @@
 
 .faq-title  {
     font-size: 42px;
-    margin-left: 2rem;
+    margin-left: 20px;
+    margin-bottom: 0;
 
     @media (max-width: 2560px) {
         font-size: 36px;
@@ -553,6 +561,7 @@
 .faq-description {
     font-family: 'Amiko';
     font-size: 32px;
+    margin-left: 20px;
 
     @media (max-width: 2560px) {
         font-size: 28px;
@@ -581,9 +590,93 @@
     @media (max-width: 540px) {
         font-size: 16px;
     }
+
+    p{
+        margin-bottom: 0;
+    }
 }
 
 .img_small{
     width: 100% !important;
     height: 200px !important;
+}
+
+.custom-accordion {
+    .accordion-item {
+        margin-bottom: 30px;
+        background-color: #1C164A;
+    }
+    .accordion-header{
+        background-color: #1C164A;
+    }
+    .accordion-button{
+        background-color: #1C164A;
+        color:white;
+        padding: 2px;
+    }
+}
+.color1 {
+    background-color: #1C164A;
+}
+
+.accordion-button::after{
+    margin-right: 10px;
+    @media (max-width: 2560px) {
+        width: 36px;
+        height: 36px;
+        background-size: 36px 36px;
+    }
+
+    @media (max-width: 992px) {
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+    }
+
+    @media (max-width: 768px) {
+        width: 26px;
+        height: 26px;
+        background-size: 26px 26px;
+    }
+
+    @media (max-width: 360px) {
+        width: 22px;
+        height: 22px;
+        background-size: 22px 22px;
+    }
+
+    @media (max-width: 380px) {
+        width: 24px;
+        height: 24px;
+        background-size: 24px 24px;
+    }
+}
+
+.social-icons {
+    margin-top: -50px;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.home-sub-title {
+    font-family: 'Poppins';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 100px;
+
+    @media (max-width: 1920px) {
+        font-size: 72px;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 56px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 44px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 }
