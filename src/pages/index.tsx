@@ -223,7 +223,6 @@ const ItuskiHome = () => {
                                                 <span>
                                                     { faq_item.title }
                                                 </span>
-                                                {/* <img src={ plus_src }  className='faq-icon'/> */}
                                             </p>   
                                     </Accordion.Header>
                                     <Accordion.Body>
