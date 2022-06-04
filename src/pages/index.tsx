@@ -101,7 +101,7 @@ const ItuskiHome = () => {
                 <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>ITSUKI RARITY</span>
 
                 <div className='home-gap'>
-                    <LazyLoadingImage src={itsuki_rarity_src} alt='itsuki_rarity' />
+                    <img src={itsuki_rarity_src} width={'100%'} />
                 </div>
             </div>
 
