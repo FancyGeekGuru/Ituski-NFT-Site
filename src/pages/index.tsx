@@ -14,7 +14,8 @@ import prev_src from 'assets/img/prev.png';
 import team_src from 'assets/img/team.png';
 import discord_src from 'assets/img/discord.png';
 import twitter_src from 'assets/img/twitter.png';
-import LazyLoadingImage from 'components/Loading/LazyLoadingImage';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 const traits_list = [
@@ -92,16 +93,14 @@ const ItuskiHome = () => {
                         </div>
                     </Col>
                     <Col sm='6'>
-                        <div>
-                            <LazyLoadingImage src={rezzsha_src} alt='rezzsha' />
-                        </div>
+                        <LazyLoadImage alt='rezzsha' src={rezzsha_src} width={'100%'} effect="blur" delayTime={300}/>
                     </Col>
                 </Row>
 
                 <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>ITSUKI RARITY</span>
 
                 <div className='home-gap'>
-                    <img src={itsuki_rarity_src} width={'100%'} />
+                    <LazyLoadImage alt='rarity' src={itsuki_rarity_src} width={'100%'} effect="blur" delayTime={300}/>
                 </div>
             </div>
 
@@ -110,7 +109,7 @@ const ItuskiHome = () => {
 
                 <div className='d-flex justify-content-end'>
                     <div className='left-image-margin-top' style={{ width: '50%' }}>
-                        <img src={left_flower_src} width={'100%'} />
+                        <LazyLoadImage alt='flower' src={left_flower_src} width={'100%'} effect="blur" delayTime={300}/>
                     </div>
                 </div>
 
@@ -133,7 +132,7 @@ const ItuskiHome = () => {
 
                 <div className='d-flex justify-content-start'>
                     <div style={{ width: '50%', marginTop: '-30px' }}>
-                        <img src={right_flower_src} width={'100%'} />
+                        <LazyLoadImage alt='flower' src={right_flower_src} width={'100%'} effect="blur" delayTime={300}/>
                     </div>
                 </div>
 
@@ -193,7 +192,8 @@ const ItuskiHome = () => {
                                         <Col sm='6' md='4' lg='3' key={index}>
                                             <div className='team-member-card'>
                                                 <div style={{ background: '#D9D9D9' }}>
-                                                    <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/>
+                                                    {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
+                                                    <LazyLoadImage alt='team' src={team_src} width={'100%'} effect="blur" delayTime={300}/>
                                                 </div>
                                                 <div style={{ background: '#0E0B26', border: '1px solid gray', textAlign:'center'}}>
                                                     <p className='description'>LOREM IPSUM</p>
